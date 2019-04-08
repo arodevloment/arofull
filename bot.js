@@ -2933,7 +2933,7 @@ client.on('message', async message => {
     if(!args) return message.reply('**حدد اسم دعوة**');
     message.guild.fetchInvites().then(i => {
       let inv = i.get(args[0]);
-      if(!inv) return message.reply(`**لم اقدر على ايجاد ${args}**`);
+      if(!inv) return message.reply(`**لم يتيم البحث  ${args}**`) ;
       var iNv = new Discord.RichEmbed()
       .setAuthor(message.author.username,message.author.avatarURL)
       .setThumbnail(message.author.avatarURL)
