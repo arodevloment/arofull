@@ -2933,7 +2933,7 @@ client.on('message', async message => {
     if(!args) return message.reply('**حدد اسم دعوة**');
     message.guild.fetchInvites().then(i => {
       let inv = i.get(args[0]);
-      if(!inv) return message.reply(`**لم يتيم البحث  ${args}**`) ;
+      if(!inv) return message.reply(`**  لم يتيم البحث  ${args}**`) ;
       var iNv = new Discord.RichEmbed()
       .setAuthor(message.author.username,message.author.avatarURL)
       .setThumbnail(message.author.avatarURL)
@@ -3343,8 +3343,8 @@ possibleInvites.push([inviteCount, exec]);
         })
         message.guild.channels.forEach(async (channel, id) => {
           await channel.overwritePermissions(muterole, {
-            SEND_MESSAGES: false,
-            ADD_REACTIONS: false
+            SEND_MESSAGES: true,
+            ADD_REACTIONS: true
           });
         });
       }catch(e){
