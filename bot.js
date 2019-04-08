@@ -2876,7 +2876,7 @@ const adminprefix = "$vip";
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
-    message.reply("**`only for Bot Owner`**")
+    message.reply("**`Hi im good**")
 if (message.content.startsWith(adminprefix + 'setgame')) {
   client.user.setGame(argresult);
     message.channel.sendMessage(`**${argresult} تم تغيير بلاينق البوت إلى **`)
