@@ -2807,7 +2807,7 @@ ${serverQueue.songs.map(song => `**${++index} -** ${song.title}`).join('\n')}
 
 	return undefined;
 });
-//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
+//by شيخ 'CODES SERVER'
 async function handleVideo(video, msg, voiceChannel, playlist = false) {
 	const serverQueue = queue.get(msg.guild.id);
 	console.log(video);
@@ -2933,16 +2933,11 @@ client.on('message', message => {
   if (message.author.id == 410835593451405312) return;
 
 
-if (message.content.startsWith(prefix + 'playing')) {
-if (message.author.id !== '434845976050794516') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
-client.user.setGame(argresult);
-    message.channel.sendMessage(`**${argresult}** : تم تغيير الحالة`)
-} else
 
 if (message.content.startsWith(prefix + 'streem')) {
 if (message.author.id !== '434845976050794516') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
 client.user.setGame(argresult, "http://twitch.tv/y04zgamer");
-    message.channel.sendMessage(`**${argresult}** :تم تغيير الحالة الى ستريمنج`)
+    message.channel.sendMessage(`**{argresult}** :تم تغيير الحالة الى ستريمنج`)
 } else
 
 if (message.content.startsWith(prefix + 'setname')) {
