@@ -27,7 +27,7 @@ const youtube = new YouTube("AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8");
 const sql = require("sqlite");
 const dateFormat = require('dateformat'); 
 const pretty = require('pretty-ms') 
-const prefix = 'S';
+const prefix = 'b!';
 var table = require('table').table
 var ti={}  
 ,spee={}
@@ -35,7 +35,7 @@ var ti={}
 
 client.on('ready', function(){
     var ms = 60000 ;
-    var setGame = ['Shelp','Type Shelp'];
+    var setGame = ['b!help','Type b!help'];
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -3480,4 +3480,4 @@ client.on('guildMemberAdd', member => {
 return channel.send("")
     }
     )});
-client.login(process.env.BOT_TOKEN)
+client.login("ODMyNzg3NTgyNjQ2NDg1MDEy.YHo34A.HakEbmIwmN0sJrF2bJ29vnYn1qU")
